@@ -1,6 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router';
 
-const routes = [
+export const router = createRouter({
+  history: createWebHistory(),
+  routes: [
   {
     path: '/',
     name: 'Home',
@@ -13,11 +15,5 @@ const routes = [
       template: '<div>Microfrontend carregando...</div>',
     },
   },
-];
-
-const router = createRouter({
-  history: createWebHistory(),
-  routes,
+],
 });
-
-export default router;
