@@ -15,7 +15,7 @@ registerMicroApps([
     name: 'patrimonio', // Nome do microfrontend
     entry: '//localhost:7105', // URL onde o microfrontend está rodando
     container: '#micro-container', // Container onde será montado
-    activeRule: '/vue3', // Rota para ativar o microfrontend
+    activeRule: '/patrimonio', // Rota para ativar o microfrontend
   },
 ]);
 

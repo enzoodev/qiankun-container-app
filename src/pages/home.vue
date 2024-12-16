@@ -2,7 +2,7 @@
   <div>
     <h1>HOME CONTAINER-APP</h1>
     <!-- Adicionando o link para a rota do microfrontend -->
-    <router-link to="/vue3">Ir para o Microfrontend Vue 3</router-link>
+    <router-link to="/patrimonio">Ir para o Microfrontend Vue 3</router-link>
   </div>
 </template>
 
