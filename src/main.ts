@@ -12,7 +12,7 @@ app.mount('#app');
 // Registrar os microfrontends
 registerMicroApps([
   {
-    name: 'vue3-microfrontend', // Nome do microfrontend
+    name: 'patrimonio', // Nome do microfrontend
     entry: '//localhost:7105', // URL onde o microfrontend está rodando
     container: '#micro-container', // Container onde será montado
     activeRule: '/vue3', // Rota para ativar o microfrontend
