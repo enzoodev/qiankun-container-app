@@ -1,12 +1,16 @@
 import { registerMicroApps, start } from 'qiankun';
+import { Quasar } from 'quasar';
 import { createApp } from 'vue';
 import App from './App.vue';
+import { quasarOptions } from './lib/plugins/quasar';
 import { router } from './router';
-import './style.css';
 
 const app = createApp(App);
 
-app.use(router);
+app
+  .use(router)
+  .use(Quasar, quasarOptions);
+
 app.mount('#app');
 
 // Registrar os microfrontends
