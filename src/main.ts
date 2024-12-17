@@ -16,10 +16,22 @@ app.mount('#app');
 // Registrar os microfrontends
 registerMicroApps([
   {
-    name: 'patrimonio', // Nome do microfrontend
-    entry: '//localhost:3030', // URL onde o microfrontend está rodando
+    name: 'patrimonio',
+    entry: '//localhost:3030',
+    container: '#micro-container',
+    activeRule: '/patrimonio',
+  },
+  {
+    name: 'depe',
+    entry: '//localhost:3031',
+    container: '#micro-container',
+    activeRule: '/depe',
+  },
+  {
+    name: 'velhodepe', // Nome do microfrontend
+    entry: '//localhost:7101', // URL onde o microfrontend está rodando
     container: '#micro-container', // Container onde será montado
-    activeRule: '/patrimonio', // Rota para ativar o microfrontend
+    activeRule: '/velhodepe', // Rota para ativar o microfrontend
   },
 ]);
 
