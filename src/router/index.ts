@@ -9,7 +9,7 @@ export const router = createRouter({
     component: () => import('../pages/home.vue'),
   },
   {
-    path: '/patrimonio', // Rota onde o microfrontend será exibido
+    path: '/sistemas/patrimonio', // Rota onde o microfrontend será exibido
     name: 'PATRIMONIO',
     component: {
       template: '<div>Microfrontend carregando...</div>',

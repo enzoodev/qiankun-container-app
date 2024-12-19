@@ -17,9 +17,11 @@ app.mount('#app');
 registerMicroApps([
   {
     name: 'patrimonio',
-    entry: '//localhost:3030',
+    entry: 'https://dev.gerais.mg.def.br/sistemas/patrimonio',
+    // entry: '//localhost:3030/sistemas/patrimonio',
+    // entry: '//localhost:3030',
     container: '#micro-container',
-    activeRule: '/patrimonio',
+    activeRule: '/sistemas/patrimonio',
   },
   {
     name: 'depe',
